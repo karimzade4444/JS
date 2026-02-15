@@ -7,3 +7,6 @@ alert("Pravilno");
 else{
     alert("nepravilno");
 }
+
+let birth = prompt('my birthday?','');
+(birth==14)?alert('Great'):alert('you dont know');
