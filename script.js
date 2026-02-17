@@ -7,7 +7,12 @@
 // let grad = (f1)=>((f1 * 9/5) + 32 )
 // console.log(grad(0))
 
-let grad = (f1,f2)=>(f1 *f2)
-console.log(grad(5,4))
+// let grad = (f1,f2)=>(f1 *f2)
+// console.log(grad(5,4))
+
+let grad = (f1)=>(f1 *2)
+console.log(grad(5))
+
+
 
 
