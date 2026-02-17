@@ -4,6 +4,10 @@
 // let cAge = (c1,c2)=>(c2-c1)
 // console.log(cAge(2000,2025))
  
-let grad = (f1)=>((f1 * 9/5) + 32 )
-console.log(grad(0))
+// let grad = (f1)=>((f1 * 9/5) + 32 )
+// console.log(grad(0))
+
+let grad = (f1,f2)=>(f1 *f2)
+console.log(grad(5,4))
+
 
