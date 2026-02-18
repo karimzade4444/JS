@@ -13,15 +13,18 @@
 // let grad = (f1)=>(f1 *2)
 // console.log(grad(5))
 
-let big = (b1,b2)=>{
-if(b1>b2){
-return b1;
-}
-else{
-    return b2;
-}
-}
-console.log(big(5,6))
+// let big = (b1,b2)=>{
+// if(b1>b2){
+// return b1;
+// }
+// else{
+//     return b2;
+// }
+// }
+// console.log(big(5,6))
+
+let calculateCircleArea = (radius)=>(3.14*radius*radius)
+console.log(Math.round( calculateCircleArea(8)))
 
 
 
