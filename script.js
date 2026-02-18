@@ -26,13 +26,23 @@
 // let calculateCircleArea = (radius)=>(3.14*radius*radius)
 // console.log(Math.round( calculateCircleArea(8)))
 
-let sum3 = (num)=>{
-let n1 = Math.round(num)%10;
-let n2 = Math.round(num/10)%10;
-let n3 = Math.round(num/100);
-return n1+n2+n3;
+// let sum3 = (num)=>{
+// let n1 = Math.round(num)%10;
+// let n2 = Math.round(num/10)%10;
+// let n3 = Math.round(num/100);
+// return n1+n2+n3;
+// }
+// console.log(sum3(123))
+
+let SumPos = (num)=>{
+if(num%2==0){
+return num+1;
 }
-console.log(sum3(123))
+else{
+    return num-2;
+}
+}
+console.log(SumPos(21))
 
 
 
