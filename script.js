@@ -44,15 +44,30 @@
 // }
 // console.log(SumPos(21))
 
-let Sum = (n1,n2)=>{
-if(n1+n2<=100){
-    return true
+// let Sum = (n1,n2)=>{
+// if(n1+n2<=100){
+//     return true
+// }
+// else{
+//     return false
+// }
+// }
+// console.log(Sum(26,75))
+
+let Time = (h,m,s)=>{
+let hs = h*3600;
+let ms = m*60;
+if(hs>ms && hs>s){
+return h;
+}
+else if(ms>hs && ms>s){
+return m;
 }
 else{
-    return false
+    return s;
 }
 }
-console.log(Sum(26,75))
+console.log(Time(2, 119, 9600))
 
 
 
