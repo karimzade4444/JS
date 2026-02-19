@@ -73,19 +73,32 @@
 // }
 // console.log(obj("MS", 2005))
 
-let obj = (a,b,c,d) =>{
-let sum=0;
-let object = {
-   a1: a, b1:b, c1:c, d1:d,
-}
-for(let key in object){
-if(typeof object[key]==="number"){
-sum+=object[key]
-}
-}
-return sum;
-}
-console.log(obj("sal",1,2,3))
+// let obj = (a,b,c,d) =>{
+// let sum=0;
+// let object = {
+//    a1: a, b1:b, c1:c, d1:d,
+// }
+// for(let key in object){
+// if(typeof object[key]==="number"){
+// sum+=object[key]
+// }
+// }
+// return sum;
+// }
+// console.log(obj("sal",1,2,3))
 
+ let obj = (a,b,c,d) =>{
+ let sum="";
+ let object = {
+    a1: a, b1:b, c1:c, d1:d,
+ }
+ for(let key in object){
+ if(typeof object[key]==="string"){
+ sum+=object[key]
+ }
+ }
+ return sum;
+ }
+ console.log(obj("sal",1,"dsjndsjk",3))
 
 
