@@ -157,21 +157,41 @@
 // }
 // console.log(MS({ a: 1, b: 2 }));
 
-function ms(array) {
-  let obj = {
-    name: 0,
-    age: 0,
-  };
-  for (let i = 0; i < array.length; i++) {
-    if (obj.age < array[i].age) {
-      obj = array[i];
-    }
-  }
-  return obj;
-}
-console.log(
-  ms([
-    { name: "John", age: 22 },
-    { name: "Johnson", age: 39 },
-  ]),
-);
+// function ms(array) {
+//   let obj = {
+//     name: 0,
+//     age: 0,
+//   };
+//   for (let i = 0; i < array.length; i++) {
+//     if (obj.age < array[i].age) {
+//       obj = array[i];
+//     }
+//   }
+//   return obj;
+// }
+// console.log(
+//   ms([
+//     { name: "John", age: 22 },
+//     { name: "Johnson", age: 39 },
+//   ]),
+// );
+
+
+ function ms(array) {
+   let obj = {};
+   for (key in array) {
+     if (Array.isArray(array[key])) {
+       return true;
+     }
+   }
+   return false;
+ }
+ console.log(
+   ms({ name: "John", age: [22, 11, 12] }),
+ );
+
+
+
+
+// let a = {};
+// console.log(Array.isArray(a));
