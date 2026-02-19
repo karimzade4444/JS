@@ -25,3 +25,13 @@
 // }
 
 // console.log(Calc.sum())
+
+let box = {
+a: 1,
+b: 2,
+name: "Kavsar",
+age: 20
+}
+console.log([box.a,box.b])
+console.log([box.name])
+console.log([box.age])
