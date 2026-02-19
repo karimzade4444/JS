@@ -38,16 +38,15 @@
 
 // function objKV(obj) {
 //   const result = {};
-  
+
 //   for (let key in obj) {
 //     result[obj[key]] = key;
 //   }
-  
+
 //   return result;
 // }
 
 // console.log(objKV({ a: 1, b: 2 }));
-
 
 // function ob(obj) {
 //   for (let key in obj) {
@@ -57,9 +56,9 @@
 //   }
 //   return false;
 // }
-// console.log(ob({ name: undefined, age: 11 })); 
-// console.log(ob({ name: false, age: 14 }));   
-// console.log(ob({ name: "john", age: 14 }));    
+// console.log(ob({ name: undefined, age: 11 }));
+// console.log(ob({ name: false, age: 14 }));
+// console.log(ob({ name: "john", age: 14 }));
 
 // let obj = (n,y)=>{
 // let object = {
@@ -101,21 +100,50 @@
 //  }
 //  console.log(obj("sal",1,"dsjndsjk",3))
 
-function generation(x, y) {
-  if (x == 0) return "me!";
+// function generation(x, y) {
+//   if (x == 0) return "me!";
 
-  const family = {
-    "-3": { m: "great grandfather", f: "great grandmother" },
-    "-2": { m: "grandfather", f: "grandmother" },
-    "-1": { m: "father", f: "mother" },
-     "1": { m: "son", f: "daughter" },
-     "2": { m: "grandson", f: "granddaughter" },
-     "3": { m: "great grandson", f: "great granddaughter" }
+//   const family = {
+//     "-3": { m: "great grandfather", f: "great grandmother" },
+//     "-2": { m: "grandfather", f: "grandmother" },
+//     "-1": { m: "father", f: "mother" },
+//      "1": { m: "son", f: "daughter" },
+//      "2": { m: "grandson", f: "granddaughter" },
+//      "3": { m: "great grandson", f: "great granddaughter" }
+//   };
+
+//   return family[x][y];
+// }
+
+// console.log(generation(2,"m"))
+
+// let obj =(x,y,z)=>{
+// let object = {
+// a:x, b:y, c:z,
+// }
+// for(let key in object){
+//    return key;
+// }
+// }
+// console.log(key)
+
+function as(a, b) {
+  let banka = a + b;
+  let letters = 0;
+  let numbers = 0;
+  for (let i = 0; i < banka.length; i++) {
+    Number();
+    if (typeof banka[i] == "string" && !Number(banka[i])) {
+      letters++;
+    } if (Number(banka[i])) {
+      numbers++;
+    }
+  }
+
+  return {
+   letters: letters,
+   numbers: numbers,
   };
-
-  return family[x][y];
 }
 
-console.log(generation(2,"m"))
-
-
+console.log(as("alo", "sad4"));
