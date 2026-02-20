@@ -178,7 +178,6 @@
 //   ]),
 // );
 
-
 //  function ms(array) {
 //    let obj = {};
 //    for (key in array) {
@@ -192,39 +191,46 @@
 //    ms({ name: "John", age: [22, 11, 12] }),
 //  );
 
+// function ms(array) {
+//   let obj = {};
+//   let sum=0;
+//   for (key in array) {
+//   if(typeof array[key]=="number"){
+//   sum+=array[key];
+//   }
+// }
+// return sum;
+// }
+// console.log(
+//   ms({ name: "John", a:22, b:11, c:12 }),
+// );
 
-  // function ms(array) {
-  //   let obj = {};
-  //   let sum=0;
-  //   for (key in array) {
-  //   if(typeof array[key]=="number"){
-  //   sum+=array[key];
-  //   }
-  // }
-  // return sum;
-  // }
-  // console.log(
-  //   ms({ name: "John", a:22, b:11, c:12 }),
-  // );
+//   function Count(arr){
+// let object = {}
+// let choch = 0;
+// for( key in arr){
+// if(arr[key]!=false){
+// choch++;
+// }
+// }
+// return choch;
+//   }
+//   console.log(Count({
+//     a: "dsadsa", b: 123, }))
 
-
-  function Count(arr){
-let object = {}
-let choch = 0;
-for( key in arr){
-if(arr[key]!=false){
-choch++;
-}
-}
-return choch;
+function as(arr) {
+  let sum = "";
+  
+  for (let key in arr) {
+    if (typeof arr[key] === "string") {
+      sum += arr[key];
+    }
   }
-  console.log(Count({
-    a: "dsadsa", b: 123, }))
+  
+  return sum;
+}
 
-
-
-
-
+console.log(as({ a: "dsadsa", b: 123, c: "abc" }));
 
 // let a = {};
 // console.log(Array.isArray(a));
