@@ -193,19 +193,33 @@
 //  );
 
 
-  function ms(array) {
-    let obj = {};
-    let sum=0;
-    for (key in array) {
-    if(typeof array[key]=="number"){
-    sum+=array[key];
-    }
+  // function ms(array) {
+  //   let obj = {};
+  //   let sum=0;
+  //   for (key in array) {
+  //   if(typeof array[key]=="number"){
+  //   sum+=array[key];
+  //   }
+  // }
+  // return sum;
+  // }
+  // console.log(
+  //   ms({ name: "John", a:22, b:11, c:12 }),
+  // );
+
+
+  function Count(arr){
+let object = {}
+let choch = 0;
+for( key in arr){
+if(arr[key]!=false){
+choch++;
+}
+}
+return choch;
   }
-  return sum;
-  }
-  console.log(
-    ms({ name: "John", a:22, b:11, c:12 }),
-  );
+  console.log(Count({
+    a: "dsadsa", b: 123, }))
 
 
 
