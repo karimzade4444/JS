@@ -60,17 +60,19 @@
 // console.log(ob({ name: false, age: 14 }));
 // console.log(ob({ name: "john", age: 14 }));
 
-// let obj = (n,y)=>{
-// let object = {
-//    name: n,
-//    year: y,
-//    age: 2026-y,
-//    start: y+7,
-//    end: y+18
-// }
-// return object;
-// }
-// console.log(obj("MS", 2005))
+//  let obj = (ob)=>{
+//  let object = {
+//  }
+//  for(key in ob){
+//    object.name = ob.name;
+//    object.year = ob.year;
+//    object.age = 2026-ob.year;
+//    object.start = ob.year+7;
+//    object.end = ob.year + 18;
+//  }
+//  return object;
+//  }
+//  console.log(obj({ name:"MS", year: 2005,}))
 
 // let obj = (a,b,c,d) =>{
 // let sum=0;
@@ -177,18 +179,35 @@
 // );
 
 
- function ms(array) {
-   let obj = {};
-   for (key in array) {
-     if (Array.isArray(array[key])) {
-       return true;
-     }
-   }
-   return false;
- }
- console.log(
-   ms({ name: "John", age: [22, 11, 12] }),
- );
+//  function ms(array) {
+//    let obj = {};
+//    for (key in array) {
+//      if (Array.isArray(array[key])) {
+//        return true;
+//      }
+//    }
+//    return false;
+//  }
+//  console.log(
+//    ms({ name: "John", age: [22, 11, 12] }),
+//  );
+
+
+  function ms(array) {
+    let obj = {};
+    let sum=0;
+    for (key in array) {
+    if(typeof array[key]=="number"){
+    sum+=array[key];
+    }
+  }
+  return sum;
+  }
+  console.log(
+    ms({ name: "John", a:22, b:11, c:12 }),
+  );
+
+
 
 
 
