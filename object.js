@@ -233,16 +233,16 @@
 // console.log(as({ a: "dsadsa", b: 123, c: "abc" }));
 
 
-function as(obj) {
-  let result = {};
+// function as(obj) {
+//   let result = {};
 
-  for (let key in obj) {
-    if (typeof obj[key] === "string" && /\d/.test(obj[key])) {
-      result[key] = obj[key];
-    }
-  }
+//   for (let key in obj) {
+//     if (typeof obj[key] === "string" && /\d/.test(obj[key])) {
+//       result[key] = obj[key];
+//     }
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
-console.log(as({ a: "dsadsa", b: "abc11", c: "abc" }));
+// console.log(as({ a: "dsadsa", b: "abc11", c: "abc" }));
