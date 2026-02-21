@@ -267,14 +267,14 @@
 // ))
 
 
-function up(arr){
-let res = {}
-for(let i = 0; i<arr.length; i++){
-res[arr[i]] = arr[i].toUpperCase()
-}
-return res
+// function up(arr){
+// let res = {}
+// for(let i = 0; i<arr.length; i++){
+// res[arr[i]] = arr[i].toUpperCase()
+// }
+// return res
 
 
-}
+// }
 
-console.log(up(["p", "s"]))
+// console.log(up(["p", "s"]))
