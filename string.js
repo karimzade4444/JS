@@ -63,8 +63,13 @@ let bankasar = "yow Bankasar yow";
 //  console.log(a("but-fet"))
 
 
-function name(p1){
-let a = p1.split(" ");
-return `${a[1]} ${a[0]}`
-}
-console.log(name("Muhammad MAkhsumov"))
+// function name(p1){
+// let a = p1.split(" ");
+// return `${a[1]} ${a[0]}`
+// }
+// console.log(name("Muhammad MAkhsumov"))
+
+// function name(p1){
+//     return p1.includes(" ")
+// }
+// console.log(name("hello, word"))
