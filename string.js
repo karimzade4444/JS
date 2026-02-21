@@ -50,18 +50,16 @@ let bankasar = "yow Bankasar yow";
 //     for(let i = 0; i<b.length;i++){
 //     sum*=Number(b[i])
 
-        
 //     }
 //     return sum;
 // }
 // console.log(a("2,3"))
 
 //  let a = (str)=>{
-     
+
 //      return str.split('-').length;
 //  }
 //  console.log(a("but-fet"))
-
 
 // function name(p1){
 // let a = p1.split(" ");
@@ -77,22 +75,23 @@ let bankasar = "yow Bankasar yow";
 // let a = (name)=>(`Hello ${name}`)
 // console.log(a("Mustafo"))
 
+ function name (arr){
 
-// function name (arr){
-// return arr.includes("=")
-
-// }
-// console.log(name("loop"))
-
-function p(name){
-    let a = name.split(" ")
-    if(a.indexOf("Nemo")){
-        return `I found Nemo at ${a.indexOf("Nemo")}`
-    }
-
-        return "I can’t find Nemo :("
-
-
-
+ for(let i=0; i<arr.length; i++){
+if( arr[i]==arr[i+1]){
+return true;
 }
-console.log(p( "I am finding Nemo !"))
+}
+return false;
+ }
+ console.log(name("loop"))
+
+// function p(name) {
+//   let a = name.split(" ");
+//   if (a.indexOf("Nemo")) {
+//     return `I found Nemo at ${a.indexOf("Nemo")}`;
+//   }
+
+//   return "I can’t find Nemo :(";
+// }
+// console.log(p("I am finding Nemo !"));
