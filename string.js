@@ -75,16 +75,16 @@ let bankasar = "yow Bankasar yow";
 // let a = (name)=>(`Hello ${name}`)
 // console.log(a("Mustafo"))
 
- function name (arr){
+//  function name (arr){
 
- for(let i=0; i<arr.length; i++){
-if( arr[i]==arr[i+1]){
-return true;
-}
-}
-return false;
- }
- console.log(name("loop"))
+//  for(let i=0; i<arr.length; i++){
+// if( arr[i]==arr[i+1]){
+// return true;
+// }
+// }
+// return false;
+//  }
+//  console.log(name("loop"))
 
 // function p(name) {
 //   let a = name.split(" ");
@@ -95,3 +95,21 @@ return false;
 //   return "I can’t find Nemo :(";
 // }
 // console.log(p("I am finding Nemo !"));
+
+// function str(words) {
+//   let a = words.split(" ");
+//   let st = " ";
+//   let str1 = a;
+//   let st1=" ";
+//   let st2 = " ";
+//   for (let i = a.length - 1; i > -1; i--) {
+//     st1+=st2;
+//     for (let j = a[i].length - 1; j >= 0; j--) {
+//     st2
+//       console.log(a[i][j]);
+//     }
+//   }
+
+//   return st;
+// }
+// console.log(str("This is a lacipyt sentence."));
