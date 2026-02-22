@@ -113,3 +113,21 @@ let bankasar = "yow Bankasar yow";
 //   return st;
 // }
 // console.log(str("This is a lacipyt sentence."));
+
+
+function don(kalima){
+let result = ""
+let sadonok = "aeiouAEIOU"
+
+for(let i = 0; i<kalima.length; i++){
+if(sadonok.includes(kalima[i])){
+result+= "-" + kalima[i] + "-";
+}
+else{
+    result+=kalima[i];
+}
+}
+return result;
+}
+console.log(don("Fight for your right to party!"))
+
