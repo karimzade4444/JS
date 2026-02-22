@@ -206,11 +206,18 @@ let bankasar = "yow Bankasar yow";
 // console.log(raq(12345))
 
 
-function HaveS(word){
-let have = word.slice(-1);
-if(have=="s"){
-return true;
+// function HaveS(word){
+// let have = word.slice(-1);
+// if(have=="s"){
+// return true;
+// }
+// return false;
+// }
+// console.log(HaveS("Doe"))
+
+
+function Upper(word){
+let reverse = word.split("").reverse().join("").toUpperCase();
+return reverse;
 }
-return false;
-}
-console.log(HaveS("Doe"))
+console.log(Upper("hello"))
