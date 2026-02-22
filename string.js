@@ -115,19 +115,32 @@ let bankasar = "yow Bankasar yow";
 // console.log(str("This is a lacipyt sentence."));
 
 
-function don(kalima){
-let result = ""
-let sadonok = "aeiouAEIOU"
+// function don(kalima){
+// let result = ""
+// let sadonok = "aeiouAEIOU"
 
-for(let i = 0; i<kalima.length; i++){
-if(sadonok.includes(kalima[i])){
-result+= "-" + kalima[i] + "-";
-}
-else{
-    result+=kalima[i];
-}
-}
-return result;
-}
-console.log(don("Fight for your right to party!"))
+// for(let i = 0; i<kalima.length; i++){
+// if(sadonok.includes(kalima[i])){
+// result+= "-" + kalima[i] + "-";
+// }
+// else{
+//     result+=kalima[i];
+// }
+// }
+// return result;
+// }
+// console.log(don("Fight for your right to party!"))
+
+// function raqam(n){
+// let result = "";
+// for(let i = 1; i<=n;i++){
+//     let str = i.toString();
+// for(let j= 0 ; j<str.length; j++){
+//     result+=str[j]+"-";
+// }
+// }
+// return result.slice(0, -1);
+
+// }
+// console.log(raqam(15))
 
