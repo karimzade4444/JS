@@ -182,9 +182,16 @@ let bankasar = "yow Bankasar yow";
 // }
 // console.log(raq(123456789))
 
-function doRepeat(word,number){
- let first = word.slice(0,-1);
- let last = word.slice(-1).repeat(number);
- return first+last;
+// function doRepeat(word,number){
+//  let first = word.slice(0,-1);
+//  let last = word.slice(-1).repeat(number);
+//  return first+last;
+// }
+// console.log(doRepeat( "Hello",5))
+
+function str(word){
+let first = word.slice(0,1)
+let last = word.slice(-1)
+return first+last;
 }
-console.log(doRepeat( "Hello",5))
+console.log(str("Mustaf"))
