@@ -114,7 +114,6 @@ let bankasar = "yow Bankasar yow";
 // }
 // console.log(str("This is a lacipyt sentence."));
 
-
 // function don(kalima){
 // let result = ""
 // let sadonok = "aeiouAEIOU"
@@ -144,3 +143,9 @@ let bankasar = "yow Bankasar yow";
 // }
 // console.log(raqam(15))
 
+// function any(word) {
+//   let chapana = word.split("").reverse().join("");
+//   return word === chapana;
+// }
+
+// console.log(any("mom"));
